@@ -1,0 +1,31 @@
+package hello;
+
+import java.util.Scanner;
+
+import verbo.Verbo;
+
+public class HelloWorld {
+	public static void main(String[] args) {
+		/*
+		System.out.println("Olá, Náthalie!");
+		
+		System.out.println("Digite um dado!");
+		Scanner ler = new Scanner(System.in);
+		String string = ler.nextLine();
+		System.out.println(string + " foi o dado digitado! \n");
+		*/
+		
+		Scanner ler = new Scanner(System.in);
+		String valor = ler.nextLine();
+		
+		// if -1 0 1
+		
+		String radical = valor.substring(0, valor.length() - 2);
+		String sufixo = valor.substring(valor.length() - 2);
+		
+		
+		
+		Verbo verbo = new Verbo(radical, sufixo);
+		verbo.conjugar(-1);
+	}
+}
