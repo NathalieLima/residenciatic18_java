@@ -1,4 +1,4 @@
-package exc1;
+package exercicios;
 
 import java.util.Scanner;
 
@@ -14,6 +14,6 @@ public class ConversorMoedas {
 		System.out.print("Quantidade de dólares: ");
 		quantidade_dolares = entrada.nextDouble();
 		
-		System.out.println("Convertendo " + quantidade_dolares + " para a taxa de câmbio " + taxa_cambio + ", tem-se: " + quantidade_dolares * taxa_cambio + " dólares.");
+		System.out.println("Convertendo " + quantidade_dolares + " dólares para a taxa de câmbio " + taxa_cambio + ", tem-se: " + quantidade_dolares * taxa_cambio + " dólares.");
 	}
 }
